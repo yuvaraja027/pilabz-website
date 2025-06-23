@@ -1,108 +1,279 @@
-/* Import Poppins font from Google Fonts */
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');  
-
-.body {
-    height: 100dvh;
-    margin: 0px;
-    background-image:  linear-gradient(rgba(0, 62, 62, 0.9), rgba(206, 243, 225, 0.4)), url(./assets/FinalBGImageBlured.svg);
-    /* background-position: center; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Poppins';
+@font-face {
+  font-family: 'Zoho Puvi';
+  src: url('/assets/fonts/ZohoPuvi/OpenType-TT/ZohoPuviThin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
 }
 
-.container {
+@font-face {
+  font-family: 'Zoho Puvi';
+  src: url('/assets/fonts/ZohoPuvi/OpenType-TT/ZohoPuviExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zoho Puvi';
+  src: url('/assets/fonts/ZohoPuvi/OpenType-TT/ZohoPuviLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zoho Puvi';
+  src: url('/assets/fonts/ZohoPuvi/OpenType-TT/ZohoPuviRegular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zoho Puvi';
+  src: url('/assets/fonts/ZohoPuvi/OpenType-TT/ZohoPuviRegularItalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Zoho Puvi';
+  src: url('/assets/fonts/ZohoPuvi/OpenType-TT/ZohoPuviMedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zoho Puvi';
+  src: url('/assets/fonts/ZohoPuvi/OpenType-TT/ZohoPuviSemibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zoho Puvi';
+  src: url('/assets/fonts/ZohoPuvi/OpenType-TT/ZohoPuviSemiboldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Zoho Puvi';
+  src: url('/assets/fonts/ZohoPuvi/OpenType-TT/ZohoPuviBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zoho Puvi';
+  src: url('/assets/fonts/ZohoPuvi/OpenType-TT/ZohoPuviBoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Zoho Puvi';
+  src: url('/assets/fonts/ZohoPuvi/OpenType-TT/ZohoPuviExtrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zoho Puvi';
+  src: url('/assets/fonts/ZohoPuvi/OpenType-TT/ZohoPuviExtraback.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zoho Puvi';
+  src: url('/assets/fonts/ZohoPuvi/OpenType-TT/ZohoPuviBlack.ttf') format('truetype');
+  font-weight: 950;
+  font-style: normal;
+}
+
+
+body {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Zoho Puvi';
+}
+
+.header {
+    background-color: #141414;
+    color: #A1A1AA;
+    /* height: 70px; */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 50px 20px;
-    width: 70vw;
-    border-radius: 20px 150px;
-    background-color: rgba(0, 0, 0, 0.2);
-    color: rgb(230, 230, 230);
 }
 
 .pilabzLogo {
-    height: 100px;
+    /* height: 70px; */
+    width: 98px;
+    padding: 20px;
+    padding-left: 30px;
+    display: inline-block;
+    z-index: 1000;
+    order: 1;
 }
 
-span {
-    display: block;
-    text-align: center;
+.dummyNavDiv {
+    /* height: 70px; */
+    width: 98px;
+    padding: 20px;
+    display: inline-block;
+    z-index: 1000;
+    order: 3;
 }
 
-.line1 {
-    font-size: 38px;
+/* NavBar */
+
+nav {
+    /* background: #ff7070; */
+    /* padding: 12px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* font-family: "Roboto", serif; */
+    font-optical-sizing: auto;
+    font-style: normal;
+    /* color: white; */
+    font-size: 16px;
+    font-weight: 400;
+    font-variation-settings: "wdth" 100;
+    /* letter-spacing: 2px; */
+    width: 100%;
+    z-index: 2000;
 }
 
-.line2, .line3, .line4, .line5 {
-    font-size: 42px;
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0;
+    list-style: none;
+    order: 3;
 }
 
-.line2, .line3 {
-    font-weight: bold;
+nav a {
+    color: #A1A1AA;
+    text-decoration: none;
 }
 
-.line6 {
-    padding: 0px 30px;
+nav a.active {
+    color: #FFFFFF;
+    font-weight: 600;
 }
+
+.menuBar {
+    /* float: right; */
+    width: 7%;
+    object-fit: scale-down;
+    z-index: 3000;
+}
+
+.checkbtn {
+    /* float: right; */
+    cursor: pointer;
+    height: 10px;
+    display: none;
+    z-index: 3000;
+    order: 2;
+}
+
+#check {
+    display: none;
+}
+
+/* Media Queries */
+
+/* Responsive Design Tablet */
+@media (max-width: 991px) {
+    .pilabzLogo {
+        /* height: 50px; */
+        width: 68px;
+        padding: 15px;
+        padding-left: 22.5px;
+        display: inline-block;
+        z-index: 1000;
+        order: 1;
+    }
+
+    nav {
+        font-size: 13px;
+    }
+
+    nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0;
+    list-style: none;
+    order: 3;
+    }
+}
+
 
 /* Responsive Design Mobile */
 @media (max-width: 768px) {
 
-    .body {
-        height: 100dvh;
-        margin: 0px;
-        background-image:  linear-gradient(rgba(0, 62, 62, 0.9), rgba(206, 243, 225, 0.4)), url(./assets/FinalBGImageBluredPhone.svg);
-        /* background-position: center; */
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Poppins';
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 30px 10px;
-        width: 70vw;
-        border-radius: 15px 100px;
-    }
-
     .pilabzLogo {
-        height: 50px;
+        /* height: 50px; */
+        width: 78px;
+        padding: 10px;
+        padding-left: 15px;
+        display: inline-block;
+        z-index: 1000;
+        order: 1;
     }
 
-    span {
-        display: block;
-        text-align: center;
+    .dummyNavDiv {
+        display: none;
     }
 
-    .line1 {
-        font-size: 16px;
-    }
-
-    .line2, .line3, .line4, .line5 {
-        font-size: 24px;
-    }
-
-    .line2, .line3 {
-        font-weight: bold;
-    }
-
-    .line6 {
-        padding: 0px 20px;
+    nav {
+        flex-wrap: wrap;
         font-size: 12px;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        /* margin-top: 180px; */
+        margin-bottom: 10px;
+        padding: 10px;
+        order: 3;
+        width: 100%;
+        z-index: 3000;
+    }
+    
+    nav ul li {
+        display: block;
+        padding: 5px;
+    }
+    
+    .checkbtn {
+        /* float: right; */
+        cursor: pointer;
+        display: block;
+        /* width: 5%; */
+        margin-right: 10px;
+        z-index: 1000;
+        order: 2;
+    }
+    
+    #check:checked nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #check:checked ~ ul {
+        display: flex;
+    }
+
+    #check:checked nav {
+        height: fit-content;
     }
 
 }

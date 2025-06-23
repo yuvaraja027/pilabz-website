@@ -6,18 +6,29 @@
     <title>Pilabz</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="body">
-    <div class="container">
-        <img class="pilabzLogo" src="./assets/PilabzLogo.svg" alt="Pilabz Logo">
-        <div>
-            <span class="line1">Code, Circuits, and Craft — All Under One Roof</span>
-            <span class="line2">Smart Tech. Rural Roots.</span>
-            <span class="line3">​Global Vision.</span>
-            <span class="line4">​Pilabz is redefining Product Engineering!</span>
-            <span class="line5">​Coming Soon...Stay tuned!!</span>
-            <span class="line6">We turn ideas into intelligent machines. From the ground up, we build smart electro-mechanical systems that blend mechanics, electronics, and software to solve real-world challenges with precision and innovation.</span>
-        </div>
-    </div>
+<body>
+    <header class="header">
+        <nav>
+            <input type="checkbox" id="check" />
+
+            <img src="/assets/PilabzLogo.svg" alt="CEET Logo" class="pilabzLogo" onclick="window.location.href='./index.html';">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <label for="check" class="checkbtn">
+                <!-- <img class="menuBar" src="menu-bar.png" alt="menu-bar" /> -->
+                <img src="/assets/icons/handBurgerIcon.svg" alt="Navbar Options List Icon" class="handBurgerIcon">
+            </label>
+
+            <div class="dummyNavDiv"></div>
+        </nav>
+    </header>
     
+
+    <script src="./script.js"></script>
 </body>
 </html>
