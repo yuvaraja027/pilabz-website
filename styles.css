@@ -299,11 +299,41 @@ nav a.active {
     margin: 10px 120px;
     margin-bottom: 80px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 600;
+    line-height: 30px;
 }
 
 .whoWeAreContentMobile {
     display: none;
+}
+
+/* Section3 */
+
+.section3 {
+    height: calc(100dvh - 78.64px);
+    display: flex;
+    justify-content: center;
+}
+
+.ourProductsContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.ourProducts {
+    margin: 10px 120px;
+    color: #008A00;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.ourProductsContent {
+    margin: 10px 120px;
+    margin-bottom: 80px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
 }
 
 
@@ -382,7 +412,25 @@ nav a.active {
         margin: 10px 80px;
         margin-bottom: 30px;
         font-size: 15px;
-        font-weight: bold;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    /* Section3 */
+
+    .ourProducts {
+    margin: 10px 80px;
+    color: #008A00;
+    font-size: 30px;
+    font-weight: bold;
+    }
+
+    .ourProductsContent {
+        margin: 10px 80px;
+        margin-bottom: 30px;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 20px;
     }
 }
 
@@ -516,4 +564,17 @@ nav a.active {
         margin: 15px;
     }
 
+    /* Section3 */
+
+    .ourProducts {
+    font-size: 20px;
+    text-align: center;
+    }
+
+    .ourProductsContent {
+        margin: 15px;
+        font-size: 14px;
+        line-height: normal;
+        text-align: center;
+    }
 }
