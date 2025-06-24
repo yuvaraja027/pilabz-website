@@ -1,3 +1,5 @@
+/* Font Import */
+
 @font-face {
   font-family: 'Zoho Puvi';
   src: url('/assets/fonts/ZohoPuvi/OpenType-TT/ZohoPuviThin.ttf') format('truetype');
@@ -102,6 +104,8 @@ body {
     color: #FFFFFF;
 }
 
+/* Header */
+
 .header {
     background-color: #141414;
     color: #A1A1AA;
@@ -199,6 +203,8 @@ nav a.active {
     background-color: #141414;
 }
 
+/* Section1  */
+
 .section1 {
     height: calc(100dvh - 78.64px);
     display: flex;
@@ -268,11 +274,46 @@ nav a.active {
     color: inherit;
 }
 
+/* Section2 */
+
+.section2 {
+    background-image: url(/assets/images/officeImage.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.whoWeAre {
+    margin: 10px 120px;
+    color: #0079D1;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.whoWeAreContent {
+    margin: 10px 120px;
+    margin-bottom: 80px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.whoWeAreContentMobile {
+    display: none;
+}
+
 
 /* Media Queries */
 
 /* Responsive Design Tablet */
 @media (max-width: 991px) {
+
+    /* Header */
+
     .pilabzLogo {
         /* height: 50px; */
         width: 68px;
@@ -282,6 +323,8 @@ nav a.active {
         z-index: 1000;
         order: 1;
     }
+
+    /* NavBar */
 
     nav {
         font-size: 13px;
@@ -297,6 +340,8 @@ nav a.active {
     }
 
     /* Pages */
+    /* Section1 */
+
     .section1 {
         height: calc(100dvh - 57.05px);
     }
@@ -323,11 +368,29 @@ nav a.active {
         height: 42px;
         border-radius: 4px;
     }
+
+    /* Section2 */
+
+    .whoWeAre {
+    margin: 10px 80px;
+    color: #0079D1;
+    font-size: 30px;
+    font-weight: bold;
+    }
+
+    .whoWeAreContent {
+        margin: 10px 80px;
+        margin-bottom: 30px;
+        font-size: 15px;
+        font-weight: bold;
+    }
 }
 
 
 /* Responsive Design Mobile */
 @media (max-width: 768px) {
+
+    /* Header */
 
     .pilabzLogo {
         /* height: 50px; */
@@ -342,6 +405,8 @@ nav a.active {
     .dummyNavDiv {
         display: none;
     }
+
+    /* NavBar */
 
     nav {
         flex-wrap: wrap;
@@ -391,6 +456,8 @@ nav a.active {
     }
 
     /* Pages */
+    /* Section1 */
+
     .section1 {
         height: calc(100dvh - 50.91px);
     }
@@ -405,7 +472,7 @@ nav a.active {
 
     .headingLine {
         font-size: 30px;
-        margin: 0px 20px;
+        margin: 0px 40px;
     }
 
     .tagLine {
@@ -428,6 +495,25 @@ nav a.active {
 
     .contactBtn {
         margin-top: 10px;
+    }
+
+    /* Section2 */
+
+    .whoWeAre {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .whoWeAreContent {
+        display: none;
+    }
+
+    .whoWeAreContentMobile {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        margin: 15px;
     }
 
 }
