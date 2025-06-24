@@ -89,20 +89,30 @@
   font-style: normal;
 }
 
+/* Smooth scroll for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
 
 body {
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Zoho Puvi';
+    color: #FFFFFF;
 }
 
 .header {
     background-color: #141414;
     color: #A1A1AA;
     /* height: 70px; */
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    border-bottom: #27272A 1px solid;
 }
 
 .pilabzLogo {
@@ -183,6 +193,82 @@ nav a.active {
     display: none;
 }
 
+/* Pages */
+
+.sectionContainer {
+    background-color: #141414;
+}
+
+.section1 {
+    height: calc(100dvh - 78.64px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container1 {
+    height: 365px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.tagsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.headingLine {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.research {
+    color: #0079D1;
+}
+
+.performance {
+    color: #008A00;
+}
+
+.tagLine {
+    color: #A1A1AA;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.exploreBtn {
+    background-color: #0079D1;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.contactBtn {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+
 /* Media Queries */
 
 /* Responsive Design Tablet */
@@ -208,6 +294,34 @@ nav a.active {
     margin: 0;
     list-style: none;
     order: 3;
+    }
+
+    /* Pages */
+    .section1 {
+        height: calc(100dvh - 57.05px);
+    }
+
+    .container1 {
+        height: 300px;
+    }
+
+    .headingLine {
+        font-size: 45px;
+    }
+
+    .tagLine {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .btnContainer {
+        font-size: 14px;
+    }
+
+    .exploreBtn, .contactBtn {
+        width: 175px;
+        height: 42px;
+        border-radius: 4px;
     }
 }
 
@@ -274,6 +388,46 @@ nav a.active {
 
     #check:checked nav {
         height: fit-content;
+    }
+
+    /* Pages */
+    .section1 {
+        height: calc(100dvh - 50.91px);
+    }
+
+    .container1 {
+        height: 365px;
+    }
+
+    .tagsContainer {
+        margin: 0px 40px;
+    }
+
+    .headingLine {
+        font-size: 30px;
+        margin: 0px 20px;
+    }
+
+    .tagLine {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    .btnContainer {
+        font-size: 12px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .exploreBtn, .contactBtn {
+        width: 120px;
+        height: 35px;
+        border-radius: 4px;
+    }
+
+    .contactBtn {
+        margin-top: 10px;
     }
 
 }
