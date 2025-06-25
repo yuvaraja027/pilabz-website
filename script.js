@@ -24,3 +24,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener('scroll', onScroll);
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const scrollContainer = document.querySelector('.productsScroll');
+    const nextButton = document.querySelector('.nextButton');
+    const prevButton = document.querySelector('.prevButton');
+
+    nextButton.addEventListener('click', () => {
+        scrollContainer.scrollBy({ left: 320, behavior: 'smooth' }); // 320px or card width + gap
+    });
+
+    prevButton.addEventListener('click', () => {
+        scrollContainer.scrollBy({ left: -320, behavior: 'smooth' });
+    });
+});
