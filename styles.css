@@ -546,6 +546,44 @@ nav a.active {
     width: 50%;
 }
 
+/* Our Core Values */
+
+.ourCoreValuesContainer {
+    background-color: #141414;
+    display: flex;
+}
+
+.ourCoreValuesSubContainer {
+    margin: 60px 10px 30px 120px;
+}
+
+.ourCoreValues {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #0079D1;
+}
+
+.ourCoreValuesPoints {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.ourCoreValuesPoints span {
+    color: #008A00;
+}
+
+.ourCoreValuesImg {
+    background-image: url(/assets/images/ourCoreValuesImg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 1 / 1;
+    overflow: auto;
+    margin: 60px 120px 30px 10px;
+    width: 40%;
+    height: 400px;
+}
 
 /* Media Queries */
 
@@ -721,6 +759,34 @@ nav a.active {
         margin-bottom: 30px;
         font-size: 15px;
         line-height: 20px;
+    }
+
+    /* Our Core Values */
+
+    .ourCoreValuesSubContainer {
+        margin: 45px 10px 20px 80px;
+    }
+
+    .ourCoreValues {
+        margin-bottom: 15px;
+        font-size: 30px;
+    }
+
+    .ourCoreValuesPoints {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .ourCoreValuesImg {
+        background-image: url(/assets/images/ourCoreValuesImg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        aspect-ratio: 1 / 1;
+        overflow: auto;
+        margin: 45px 80px 20px 10px;
+        width: 40%;
+        height: 300px;
     }
 
 }
@@ -1014,4 +1080,43 @@ nav a.active {
         line-height: normal;
         width: 90%;
     }
+
+    /* Our Core Values */
+
+    .ourCoreValuesContainer {
+        background-color: #141414;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ourCoreValuesSubContainer {
+        margin: 30px 20px 5px;
+    }
+
+    .ourCoreValues {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .ourCoreValuesPoints {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .ourCoreValuesPoints span {
+        color: #008A00;
+    }
+
+    .ourCoreValuesImg {
+        background-image: url(/assets/images/ourCoreValuesImg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        aspect-ratio: 1 / 1;
+        overflow: auto;
+        margin: 30px 20px;
+        width: 90%;
+        height: 200px;
+    }
+
 }
