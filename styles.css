@@ -315,6 +315,7 @@ nav a.active {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .ourProductsContainer {
@@ -463,6 +464,91 @@ nav a.active {
     align-self: self-end;
 }
 
+/* Section4 */
+
+.section4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1E2224;
+}
+
+.aboutUs {
+    color: #008A00;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.ourMissionVisionContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gapBetweenMissionVision {
+    height: 60px;
+}
+
+.ourMissionContainer {
+    background-image: url(/assets/images/ourMissionBgImg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 4 / 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    overflow: auto;
+}
+
+.ourVisionContainer {
+    background-image: url(/assets/images/ourVisionBgImg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 4 / 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow: auto;
+    text-align: right;
+}
+
+.ourMission {
+    margin: 10px 120px;
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #0079D1;
+}
+
+.ourMissionContent {
+    margin: 10px 120px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 50%;
+}
+
+.ourVision {
+    margin: 10px 120px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #0079D1;
+}
+
+.ourVisionContent {
+    margin: 10px 120px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 50%;
+}
+
 
 /* Media Queries */
 
@@ -602,6 +688,42 @@ nav a.active {
         font-size: 12px;
         width: 70px;
         height: 23px;
+    }
+
+    /* Section4 */
+
+    .aboutUs {
+        font-size: 30px;
+        margin-top: 25px;
+        margin-bottom: 35px;
+    }
+
+    .gapBetweenMissionVision {
+        height: 45px;
+    }
+
+    .ourMission {
+        margin: 10px 80px;
+        margin-top: 30px;
+        font-size: 30px;
+    }
+
+    .ourMissionContent {
+        margin: 10px 80px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .ourVision {
+        margin: 10px 80px;
+        font-size: 30px;
+    }
+
+    .ourVisionContent {
+        margin: 10px 80px;
+        margin-bottom: 30px;
+        font-size: 15px;
+        line-height: 20px;
     }
 
 }
@@ -856,5 +978,43 @@ nav a.active {
     .hideProducts {
         display: none;
         transition: all 0.3s ease-in-out;
+    }
+
+    /* Section4 */
+
+    .aboutUs {
+        font-size: 20px;
+        margin-top: 25px;
+        margin-bottom: 35px;
+    }
+
+    .gapBetweenMissionVision {
+        height: 30px;
+    }
+
+    .ourMission {
+        margin: 5px 20px;
+        margin-top: 5px;
+        font-size: 18px;
+    }
+
+    .ourMissionContent {
+        margin: 5px 20px;
+        font-size: 10px;
+        line-height: normal;
+        width: 90%;
+    }
+
+    .ourVision {
+        margin: 5px 20px;
+        font-size: 18px;
+    }
+
+    .ourVisionContent {
+        margin: 5px 20px;
+        margin-bottom: 5px;
+        font-size: 10px;
+        line-height: normal;
+        width: 90%;
     }
 }

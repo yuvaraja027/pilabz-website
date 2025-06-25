@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
       toggleBtn.textContent = 'View All Products';
     } else {
       hiddenSection.style.display = 'block';
-      toggleBtn.textContent = 'Show Less Products';
+      toggleBtn.textContent = 'Show Less';
     }
   });
 });
