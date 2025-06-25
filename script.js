@@ -39,3 +39,22 @@ document.addEventListener('DOMContentLoaded', function () {
         scrollContainer.scrollBy({ left: -320, behavior: 'smooth' });
     });
 });
+
+// Show and Hide All Products
+
+document.addEventListener('DOMContentLoaded', function () {
+  const toggleBtn = document.querySelector('.viewAllProducts');
+  const hiddenSection = document.querySelector('.hideProducts');
+
+  toggleBtn.addEventListener('click', function () {
+    const isVisible = hiddenSection.style.display === 'block';
+
+    if (isVisible) {
+      hiddenSection.style.display = 'none';
+      toggleBtn.textContent = 'View All Products';
+    } else {
+      hiddenSection.style.display = 'block';
+      toggleBtn.textContent = 'Show Less Products';
+    }
+  });
+});
