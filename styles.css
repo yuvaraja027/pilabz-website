@@ -487,10 +487,6 @@ nav a.active {
     justify-content: space-between;
 }
 
-.gapBetweenMissionVision {
-    height: 60px;
-}
-
 .ourMissionContainer {
     background-image: url(/assets/images/ourMissionBgImg.svg);
     background-repeat: no-repeat;
@@ -517,6 +513,7 @@ nav a.active {
     align-items: flex-end;
     overflow: auto;
     text-align: right;
+    margin-top: 60px;
 }
 
 .ourMission {
@@ -698,10 +695,6 @@ nav a.active {
         margin-bottom: 35px;
     }
 
-    .gapBetweenMissionVision {
-        height: 45px;
-    }
-
     .ourMission {
         margin: 10px 80px;
         margin-top: 30px;
@@ -712,6 +705,10 @@ nav a.active {
         margin: 10px 80px;
         font-size: 15px;
         line-height: 20px;
+    }
+
+    .ourVisionContainer {
+        margin-top: 45px;
     }
 
     .ourVision {
@@ -988,10 +985,6 @@ nav a.active {
         margin-bottom: 35px;
     }
 
-    .gapBetweenMissionVision {
-        height: 30px;
-    }
-
     .ourMission {
         margin: 5px 20px;
         margin-top: 5px;
@@ -1003,6 +996,10 @@ nav a.active {
         font-size: 10px;
         line-height: normal;
         width: 90%;
+    }
+
+    .ourVisionContainer {
+        margin-top: 30px;
     }
 
     .ourVision {
