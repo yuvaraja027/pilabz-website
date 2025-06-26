@@ -551,10 +551,12 @@ nav a.active {
 .ourCoreValuesContainer {
     background-color: #141414;
     display: flex;
+    align-items: center;
 }
 
 .ourCoreValuesSubContainer {
     margin: 60px 10px 30px 120px;
+    width: 50%;
 }
 
 .ourCoreValues {
@@ -578,11 +580,12 @@ nav a.active {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 149 / 85;
     overflow: auto;
     margin: 60px 120px 30px 10px;
-    width: 40%;
-    height: 400px;
+    width: 50%;
+    max-height: 400px;
+    height: 100%;
 }
 
 /* The Minds Behind Innovation */
@@ -655,7 +658,7 @@ nav a.active {
     background-image: url(/assets/images/srinivasTangiralaImg.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center -1px;
     aspect-ratio: 19 / 23;
     overflow: auto;
 }
@@ -664,7 +667,7 @@ nav a.active {
     background-image: url(/assets/images/kannanLakshminarayananImg.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center -1px;
     aspect-ratio: 1 / 1;
     overflow: auto;
 }
@@ -990,15 +993,8 @@ nav a.active {
     }
 
     .ourCoreValuesImg {
-        background-image: url(/assets/images/ourCoreValuesImg.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        aspect-ratio: 1 / 1;
-        overflow: auto;
         margin: 45px 80px 20px 10px;
-        width: 40%;
-        height: 300px;
+        max-height: 300px;
     }
 
     /* The Minds Behind Innovation */
@@ -1431,10 +1427,12 @@ nav a.active {
         background-color: #141414;
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
     }
 
     .ourCoreValuesSubContainer {
         margin: 30px 20px 5px;
+        width: inherit;
     }
 
     .ourCoreValues {
@@ -1452,15 +1450,9 @@ nav a.active {
     }
 
     .ourCoreValuesImg {
-        background-image: url(/assets/images/ourCoreValuesImg.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        aspect-ratio: 1 / 1;
-        overflow: auto;
         margin: 30px 20px;
         width: 90%;
-        height: 200px;
+        max-height: 300px;
     }
 
     /* The Minds Behind Innovation */
