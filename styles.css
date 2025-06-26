@@ -691,6 +691,7 @@ nav a.active {
 
 .whatWeDoContainer {
     background-color: #141414;
+    padding-bottom: 20px;
 }
 
 .whatWeDo {
@@ -744,6 +745,57 @@ nav a.active {
     line-height: 30px;
 }
 
+/* Services Capabilities */
+
+.servicesCapabilitiesContainer {
+    background-color: #1E2224;
+    margin-bottom: 60px;
+}
+
+.servicesCapabilities {
+    margin: 40px 120px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #0079D1;
+}
+
+.servicesListContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 120px;
+    gap: 40px;
+}
+
+.servicesList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+.servicesIcon {
+    width: 35px;
+    height: 35px;
+    background-color: #008A00;
+    border-radius: 50%;
+    padding: 10px;
+    overflow: visible;
+}
+
+.servicesTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 10px;
+}
+
+/* Industries We Serve */
+/* (This Section is similar to the above, so used the same class names to style this section)  */
+
+.industriesWeServeContainer {
+    background-color: #141414;
+    padding-bottom: 20px;
+}
 
 /* Media Queries */
 
@@ -1042,6 +1094,43 @@ nav a.active {
     .cardDesc {
         font-size: 15px;
         line-height: 20px;
+    }
+
+    /* Services Capabilities */
+
+    .servicesCapabilitiesContainer {
+        margin-bottom: 40px;
+    }
+
+    .servicesCapabilities {
+        margin: 20px 80px;
+        font-size: 30px;
+    }
+
+    .servicesListContainer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 10px 80px;
+        gap: 30px;
+    }
+
+    .servicesList {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+    }
+
+    .servicesIcon {
+        width: 25px;
+        height: 25px;
+        padding: 8px;
+    }
+
+    .servicesTitle {
+        font-size: 15px;
+        margin: 8px 8px;
     }
 
 }
@@ -1419,8 +1508,9 @@ nav a.active {
     /* What We Do */
 
     .whatWeDo {
-        margin: 20px 20px;
+        margin: 20px;
         font-size: 18px;
+        text-align: center;
     }
 
     .cardsContainer {
@@ -1452,6 +1542,44 @@ nav a.active {
     .cardDesc {
         font-size: 10px;
         line-height: 16px;
+    }
+
+    /* Services Capabilities */
+
+    .servicesCapabilitiesContainer {
+        margin-bottom: 20px;
+    }
+
+    .servicesCapabilities {
+        margin: 20px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .servicesListContainer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 5px 20px;
+        gap: 15px;
+    }
+
+    .servicesList {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 280px;
+    }
+
+    .servicesIcon {
+        width: 20px;
+        height: 20px;
+        padding: 8px;
+    }
+
+    .servicesTitle {
+        font-size: 12px;
+        margin: 8px 8px;
     }
 
 }
