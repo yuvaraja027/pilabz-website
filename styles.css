@@ -585,6 +585,108 @@ nav a.active {
     height: 400px;
 }
 
+/* The Minds Behind Innovation */
+
+.theMindsContainer {
+    background-color: #1E2224;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.theMinds {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.theMinds span {
+    color: #0079D1;
+}
+
+.personCardsContainer {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+.personCard {
+    margin-right: 80px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    /* padding-left: 16px; */
+    height: 100%;
+}
+
+.personCard::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #0f0f0f, #007bff); /* black to blue */
+    border-radius: 2px;
+}
+
+.person1, .person3 {
+    margin-top: 80px;
+}
+
+.person1 {
+    width: 20%;
+    margin-left: 80px;
+}
+
+.person2 {
+    width: 25%;
+}
+
+.person3 {
+    width: 20%;
+}
+
+.srinivasTangiralaImg {
+    background-image: url(/assets/images/srinivasTangiralaImg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 19 / 23;
+    overflow: auto;
+}
+
+.kannanImg {
+    background-image: url(/assets/images/kannanLakshminarayananImg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 1 / 1;
+    overflow: auto;
+}
+
+.personDetails {
+    margin-top: 20px;
+    margin-left: 20px; 
+}
+
+.personDetails h3 {
+    font-size: 23px;
+    margin: 10px 0px;
+    font-weight: bold;
+}
+
+.personDetails div {
+    font-size: 20px;
+    margin: 0px;
+    font-weight: 600;
+    color: #777777;
+}
+
 /* Media Queries */
 
 /* Responsive Design Tablet */
@@ -787,6 +889,88 @@ nav a.active {
         margin: 45px 80px 20px 10px;
         width: 40%;
         height: 300px;
+    }
+
+    /* The Minds Behind Innovation */
+
+    .theMindsContainer {
+        margin-bottom: 100px;
+    }
+
+    .theMinds {
+        margin-top: 40px;
+        margin-bottom: 15px;
+        font-size: 30px;
+    }
+
+    .personCardsContainer {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px;
+    }
+
+    .personCard {
+        margin-right: 40px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        height: 100%;
+    }
+
+    .personCard::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 4px;
+        height: 100%;
+        background: linear-gradient(to bottom, #0f0f0f, #007bff); /* black to blue */
+        border-radius: 2px;
+    }
+
+    .person1, .person3 {
+        margin-top: 40px;
+    }
+
+    .person1 {
+        margin-left: 40px;
+    }
+
+    .srinivasTangiralaImg {
+        background-image: url(/assets/images/srinivasTangiralaImg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        aspect-ratio: 19 / 23;
+        overflow: auto;
+    }
+
+    .kannanImg {
+        background-image: url(/assets/images/kannanLakshminarayananImg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        aspect-ratio: 1 / 1;
+        overflow: auto;
+    }
+
+    .personDetails {
+        margin-top: 15px;
+        margin-left: 15px; 
+    }
+
+    .personDetails h3 {
+        font-size: 20px;
+        margin: 10px 0px;
+        font-weight: bold;
+    }
+
+    .personDetails div {
+        font-size: 15px;
+        margin: 0px;
+        font-weight: 600;
+        color: #777777;
     }
 
 }
@@ -1117,6 +1301,88 @@ nav a.active {
         margin: 30px 20px;
         width: 90%;
         height: 200px;
+    }
+
+    /* The Minds Behind Innovation */
+
+    .theMindsContainer {
+        margin-bottom: 60px;
+    }
+
+    .theMinds {
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    .personCardsContainer {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px;
+    }
+
+    .personCard {
+        margin-right: 15px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        height: 100%;
+    }
+
+    .personCard::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 4px;
+        height: 100%;
+        background: linear-gradient(to bottom, #0f0f0f, #007bff); /* black to blue */
+        border-radius: 2px;
+    }
+
+    .person1, .person3 {
+        margin-top: 20px;
+    }
+
+    .person1 {
+        margin-left: 15px;
+    }
+
+    .srinivasTangiralaImg {
+        background-image: url(/assets/images/srinivasTangiralaImg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        aspect-ratio: 19 / 23;
+        overflow: auto;
+    }
+
+    .kannanImg {
+        background-image: url(/assets/images/kannanLakshminarayananImg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        aspect-ratio: 1 / 1;
+        overflow: auto;
+    }
+
+    .personDetails {
+        margin-top: 4px;
+        margin-left: 8px; 
+    }
+
+    .personDetails h3 {
+        font-size: 10px;
+        margin: 4px 0px;
+        font-weight: bold;
+    }
+
+    .personDetails div {
+        font-size: 8px;
+        margin: 0px;
+        font-weight: 600;
+        color: #777777;
     }
 
 }
