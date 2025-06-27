@@ -892,6 +892,52 @@ nav a.active {
     display: none;
 }
 
+/* Section6 - Contact */
+
+.contactContainer {
+    margin: 40px 120px 0px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.addressSocialContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addressSocialContainer img {
+    width: 15px;
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
+.addressContainer {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.addressContainer > div {
+    display: flex;
+    align-items: flex-start;
+}
+
+.addressTitle {
+    font-weight: 600;
+}
+
+.footerLogoContainer {
+    text-align: end;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contactPilabzLogo {
+    width: 160px;
+    margin-bottom: 10px;
+}
+
 /* Media Queries */
 
 /* Responsive Design Tablet */
@@ -1268,6 +1314,32 @@ nav a.active {
     .dot.active {
         width: 20px;
         border-radius: 15px;
+    }
+
+    /* Section6 - Contact */
+
+    .contactContainer {
+        margin: 30px 80px 0px;
+        padding-bottom: 30px;
+    }
+
+    .addressSocialContainer img {
+        width: 12px;
+        margin-top: 2px;
+        margin-right: 4px;
+    }
+
+    .addressContainer {
+        font-size: 12px;
+    }
+
+    .footerLogoContainer {
+        font-size: 12px;
+    }
+
+    .contactPilabzLogo {
+        width: 120px;
+        margin-bottom: 8px;
     }
 
 }
@@ -1784,6 +1856,55 @@ nav a.active {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    /* Section6 - Contact */
+
+    .contactContainer {
+        margin: 20px 40px 0px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .addressSocialContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .addressSocialContainer img {
+        width: 12px;
+        margin-top: 2px;
+        margin-right: 4px;
+    }
+
+    .addressContainer {
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    .addressContainer > div {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .addressTitle {
+        font-weight: 600;
+    }
+
+    .footerLogoContainer {
+        text-align: center;
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    .contactPilabzLogo {
+        width: 80px;
+        margin-top: 40px;
+        margin-bottom: 5px;
     }
 
 }
