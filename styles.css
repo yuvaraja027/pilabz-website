@@ -800,6 +800,98 @@ nav a.active {
     padding-bottom: 20px;
 }
 
+/* Section5 - Careers */
+
+.section5 {
+    background-color: #1E2224;
+}
+
+.careersContainer {
+    display: flex;
+    margin: 30px 120px;
+}
+
+.joinUs {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.careersTitle {
+    font-size: 40px;
+    font-weight: bold;
+    color: #008A00;
+    margin: 40px 0px;
+}
+
+.joinOurFast {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.openPositionsBtn {
+    background-color: #008A00;
+    font-size: 24px;
+    font-weight: 600;
+    width: 366px;
+    height: 52px;
+    margin-top: 125px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamPics {
+  width: 60%;
+  max-width: 700px;
+  margin: 100px 50px;
+  margin-right: 0px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carouselTrack {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carouselImg {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.carouselDots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 4px;
+  background-color: #555;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.dot.active {
+  width: 25px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.openPositionsBtnMobile {
+    display: none;
+}
+
 /* Media Queries */
 
 /* Responsive Design Tablet */
@@ -1127,6 +1219,55 @@ nav a.active {
     .servicesTitle {
         font-size: 15px;
         margin: 8px 8px;
+    }
+
+    /* Section5 - Careers */
+
+    .careersContainer {
+        margin: 20px 80px;
+    }
+
+    .careersTitle {
+        font-size: 30px;
+        margin: 30px 0px;
+    }
+
+    .joinOurFast {
+        font-size: 30px;
+    }
+
+    .openPositionsBtn {
+        background-color: #008A00;
+        font-size: 18px;
+        font-weight: 600;
+        width: 250px;
+        height: 40px;
+        margin-top: 65px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .teamPics {
+        width: 60%;
+        max-width: 700px;
+        margin: 50px 25px;
+        margin-right: 0px;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .dot {
+        height: 8px;
+        width: 8px;
+    }
+
+    .dot.active {
+        width: 20px;
+        border-radius: 15px;
     }
 
 }
@@ -1572,6 +1713,77 @@ nav a.active {
     .servicesTitle {
         font-size: 12px;
         margin: 8px 8px;
+    }
+
+    /* Section5 - Careers */
+
+    .careersContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 5px 40px;
+    }
+
+    .joinUs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .careersTitle {
+        font-size: 20px;
+        margin: 20px 0px;
+    }
+
+    .joinOurFast {
+        font-size: 20px;
+    }
+
+    .haveAnOutsized {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .openPositionsBtn {
+        display: none;
+    }
+
+    .teamPics {
+        width: 100%;
+        max-width: 700px;
+        margin: 50px 0px;
+    }
+
+    .carouselDots {
+        margin-top: 8px;
+    }
+
+    .dot {
+        height: 5px;
+        width: 5px;
+        margin: 0 2px;
+    }
+
+    .dot.active {
+        width: 10px;
+    }
+
+    .openPositionsBtnMobile {
+        background-color: #008A00;
+        font-size: 14px;
+        font-weight: 600;
+        width: 270px;
+        height: 44px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 }

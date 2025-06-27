@@ -58,3 +58,38 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+
+// Team Pics In Career Section 
+
+const track = document.querySelector(".carouselTrack");
+const dots = document.querySelectorAll(".dot");
+const images = document.querySelectorAll(".carouselImg");
+let index = 0;
+
+function updateCarousel() {
+  track.style.transform = `translateX(-${index * 100}%)`;
+  dots.forEach(dot => dot.classList.remove("active"));
+  dots[index].classList.add("active");
+}
+
+function autoScroll() {
+  index = (index + 1) % images.length;
+  updateCarousel();
+}
+
+// Set interval for auto-scroll
+let interval = setInterval(autoScroll, 3000);
+
+// Click event for dots
+dots.forEach((dot, i) => {
+  dot.addEventListener("click", () => {
+    index = i;
+    updateCarousel();
+
+    // Optional: reset timer to give user time before next scroll
+    clearInterval(interval);
+    interval = setInterval(autoScroll, 3000);
+  });
+});
+
