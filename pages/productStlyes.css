@@ -1,0 +1,36 @@
+
+.sectionContainer {
+    background-color: #141414;
+    margin: 0px;
+    height: 100%;
+}
+
+.section {
+    margin: 0px 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.productTitle {
+    color: #0079D1;
+    margin: 0px;
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.productDesc {
+    margin: 20px 0px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.productImg {
+    margin: 40px 120px;
+}
+
+.productSubTitle {
+    color: #0079D1;
+    display: block;
+}
