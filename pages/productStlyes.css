@@ -2,7 +2,6 @@
 .sectionContainer {
     background-color: #141414;
     margin: 0px;
-    height: 100%;
 }
 
 .section {
@@ -33,4 +32,51 @@
 .productSubTitle {
     color: #0079D1;
     display: block;
+}
+
+/* Media Queries */
+
+/* Responsive Design Tablet */
+@media (max-width: 991px) {
+    .section {
+        margin: 0px 80px;
+    }
+
+    .productTitle {
+        padding-top: 25px;
+        font-size: 25px;
+    }
+
+    .productDesc {
+        margin: 18px 0px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .productImg {
+        margin: 30px 80px;
+    }
+
+}
+
+/* Responsive Design Mobile */
+@media (max-width: 768px) {
+    .section {
+        margin: 0px 20px;
+    }
+
+    .productTitle {
+        padding-top: 20px;
+        font-size: 18px;
+    }
+
+    .productDesc {
+        margin: 15px 0px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .productImg {
+        margin: 20px 40px;
+    }
 }
