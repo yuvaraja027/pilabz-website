@@ -687,6 +687,15 @@ nav a.active {
     overflow: auto;
 }
 
+.radhakrishnanImg {
+    background-image: url(/assets/images/radhakrishnanImg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -1px;
+    aspect-ratio: 19 / 23;
+    overflow: auto;
+}
+
 .personDetails {
     margin-top: 20px;
     margin-left: 20px; 
