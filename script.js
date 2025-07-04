@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', onScroll);
 });
 
+// This is for Products Next Prev Buttons (Scroll)
 
 document.addEventListener('DOMContentLoaded', function () {
     const scrollContainer = document.querySelector('.productsScroll');
@@ -59,6 +60,27 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// Show and Hide Minds Details
+
+document.addEventListener('DOMContentLoaded', function () {
+  const toggleBtn = document.querySelector('.knowMoreAboutThem');
+  const actualSection = document.querySelector('.personCardsContainer');
+  const hiddenSection = document.querySelector('.personCardsContainerMore');
+
+  toggleBtn.addEventListener('click', function () {
+    const isVisible = hiddenSection.style.display === 'flex';
+
+    if (isVisible) {
+      actualSection.style.display = 'flex';
+      hiddenSection.style.display = 'none';
+      toggleBtn.textContent = 'Know More About Them';
+    } else {
+      actualSection.style.display = 'none';
+      hiddenSection.style.display = 'flex';
+      toggleBtn.textContent = 'Show Less';
+    }
+  });
+});
 
 // Team Pics In Career Section 
 

@@ -714,6 +714,96 @@ nav a.active {
     color: #777777;
 }
 
+.knowMoreAboutThem {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0079D1;
+    text-decoration: underline;
+    text-align: center;
+    cursor: pointer;
+}
+
+.personCardsContainerMore {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 0px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.personCardMore {
+    margin: 40px 120px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    color: white;
+    /* padding-left: 16px; */
+    height: 100%;
+    width: calc(100% - 240px);
+}
+
+.personCardMore::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #0f0f0f, #007bff); /* black to blue */
+    border-radius: 2px;
+}
+
+.person1More, .person3More {
+    /* margin-top: 80px; */
+}
+
+.person1More {
+    /* width: 20%; */
+    /* margin-left: 80px; */
+}
+
+.person2More {
+    /* width: 25%; */
+}
+
+.person3More {
+    /* width: 20%; */
+}
+
+.photoCardMore {
+    /* width: 40%; */
+}
+
+.personDetailsMore {
+    margin-top: 20px;
+    margin-left: 20px; 
+}
+
+.personDetailsMore h3 {
+    font-size: 23px;
+    margin: 10px 0px;
+    font-weight: bold;
+}
+
+.noWrapNameMore h3 {
+    white-space: nowrap;
+}
+
+.personDetailsMore div {
+    font-size: 20px;
+    margin: 0px;
+    font-weight: 600;
+    color: #777777;
+}
+
+.personOverviewMore {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 100px;
+}
+
 /* What We Do */
 
 .whatWeDoContainer {
@@ -1218,6 +1308,21 @@ nav a.active {
         font-size: 15px;
     }
 
+    .knowMoreAboutThem {
+        font-size: 18px;
+        font-weight: bold;
+        color: #0079D1;
+        text-decoration: underline;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .personOverviewMore {
+        font-size: 16px;
+        line-height: 25px;
+        margin-left: 50px;
+    }
+
     /* What We Do */
 
     .whatWeDo {
@@ -1612,6 +1717,7 @@ nav a.active {
         color: #0079D1;
         text-decoration: underline;
         text-align: center;
+        cursor: pointer;
     }
 
     .hideProducts {
@@ -1729,6 +1835,34 @@ nav a.active {
 
     .personDetails div {
         font-size: 8px;
+    }
+
+    .knowMoreAboutThem {
+        font-size: 14px;
+        font-weight: bold;
+        color: #0079D1;
+        text-decoration: underline;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .personCardMore {
+        margin: 5px 40px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        color: white;
+        /* padding-left: 16px; */
+        height: 100%;
+        width: calc(100% - 80px);
+    }
+
+    .personOverviewMore {
+        font-size: 12px;
+        line-height: 20px;
+        margin-left: 20px;
+        margin-top: 4px;
     }
 
     /* What We Do */
